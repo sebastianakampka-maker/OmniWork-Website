@@ -1,8 +1,12 @@
-export default function Page() {
+export const metadata = {
+  title: "OmniWorks Services",
+  description: "Property services in the Rhein-Main area",
+};
+
+export default function RootLayout({ children }) {
   return (
-    <div style={{padding: "40px", color: "white"}}>
-      <h1>OmniWorks läuft 🚀</h1>
-      <p>Website ist online</p>
-    </div>
+    <html lang="de">
+      <body style={{ margin: 0 }}>{children}</body>
+    </html>
   );
 }
